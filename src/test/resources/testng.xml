@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="InsiderScope" verbose="1">
+    <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter"/>
+    </listeners>
+    <test name="InsiderScopeChrome">
+        <classes>
+            <class name="az.insiderTests.TestScope">
+                <methods>
+                    <include name="viewAllQaRoles"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
